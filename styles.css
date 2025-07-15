@@ -502,9 +502,13 @@ nav a:hover {
   box-shadow: var(--card-shadow);
   transition: background 0.2s, color 0.2s;
 }
-.social-btn:hover {
+.social-links a{
+  color:white;
+}
+.social-links a:hover {
   background: var(--primary-light);
-  color: #fff;
+  color: black;
+  
 }
 
 /* Footer */
@@ -953,6 +957,14 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
 } 
 
 .project-card:hover {
+  box-shadow: 0 6px 32px rgba(30,215,96,0.18);
+  transform: translateY(-8px) scale(1.03);
+  border: 1.5px solid var(--primary);
+  transition: box-shadow 0.3s, transform 0.3s, border 0.3s;
+  cursor: pointer;
+} 
+
+.education-card:hover {
   box-shadow: 0 6px 32px rgba(30,215,96,0.18);
   transform: translateY(-8px) scale(1.03);
   border: 1.5px solid var(--primary);
