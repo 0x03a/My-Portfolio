@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Inshal - Web Developer Portfolio">
+  <title>Muhammad Inshal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">Muhammad Inshal</div>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1>I am Muhammad Inshal</h1>
+          <h2 class="hero-role">I am a <span id="hero-animated-role" class="highlight">Web Developer</span></h2>
+          <p class="hero-bio">Passionate about creating innovative solutions through code. I love turning  complex problems <br> into simple, beautiful designs.</p>
+          <div class="hero-actions">
+            <a href="resume.pdf" class="btn primary" download>
+              <span class="icon">&#8681;</span> Download Resume
+            </a>
+            <a href="#contact" class="btn secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./images/image.png" alt="Muhammad Inshal cartoon" class="pulse-shadow" />
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section hidden-on-load">
+      <div class="container about-container">
+        
+        <div class="about-info">
+          <h2>About Me</h2>
+          <p>I'm a passionate web developer with a strong foundation in both frontend and backend technologies. My journey in programming started with a curiosity about how websites work, which led me to dive deep into various programming languages and frameworks.</p>
+          <p>I believe in writing clean, efficient code and creating user experiences that are both functional and delightful. When I'm not coding, you can find me exploring new technologies and contributing to open-source projects.</p>
+          <div class="about-location">
+            <span class="icon">&#128205;</span> Based in Pakistan
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="skills-code-section">
+      <div class="container skills-code-container">
+        <div class="skills-block">
+          <section id="skills" class="skills-section hidden-on-load">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-card"><span class="icon">&#128187;</span> JavaScript</div>
+              <div class="skill-card"><span class="icon">&#128187;</span> C++</div>
+              <div class="skill-card"><span class="icon">&#128013;</span> Python</div>
+              <div class="skill-card"><span class="icon">&#9889;</span> Express.js</div>
+              <div class="skill-card"><span class="icon">&#128187;</span> Node.js</div>
+              <div class="skill-card"><span class="icon">&#128187;</span> HTML</div>
+              <div class="skill-card"><span class="icon">&#128187;</span> CSS</div>
+            </div>
+          </section>
+        </div>
+        <div class="code-block hidden-on-load">
+          <h2>Where I code:</h2>
+          <img src="./images/leetcode.png" alt="LeetCode" class="leetcode-img" />
+            <a href="https://leetcode.com/u/inshalbro/" class="leetcode-link">LeetCode</a>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section hidden-on-load">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>E-Commerce Platform</h3>
+            <p>Full-stack e-commerce solution built with Node.js, Express, and React</p>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="icon-link" title="Source Code">&#128187; Code</a>
+              <a href="#" class="icon-link" title="Live Demo">&#128279; Live Demo</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Task Management App</h3>
+            <p>Collaborative task management tool with real-time updates</p>
+            <div class="project-tags">
+              <span>React</span><span>Firebase</span><span>Tailwind CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="icon-link" title="Source Code">&#128187; Code</a>
+              <a href="#" class="icon-link" title="Live Demo">&#128279; Live Demo</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Weather Dashboard</h3>
+            <p>Real-time weather monitoring dashboard with data visualization</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>API Integration</span><span>Chart.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="icon-link" title="Source Code">&#128187; Code</a>
+              <a href="#" class="icon-link" title="Live Demo">&#128279; Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="education-section hidden-on-load">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="education-card">
+          <div class="education-info">
+            <span class="icon">&#127891;</span>
+            <div>
+              <strong>Bachelor of Science in Computer Science</strong><br>
+              University of Technology
+            </div>
+          </div>
+          <div class="education-meta">
+            <span class="badge">2019 - 2023</span>
+            <span class="badge">GPA: 3.8/4.0</span>
+          </div>
+          <div class="education-courses">
+            <strong>Relevant Coursework:</strong>
+            <span class="course-badge">Data Structures</span>
+            <span class="course-badge">Web Development</span>
+            <span class="course-badge">Database Systems</span>
+            <span class="course-badge">Software Engineering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section hidden-on-load">
+      <div class="container contact-container">
+        <div class="contact-info-block">
+          <h2>Get In Touch</h2>
+          <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out!</p>
+          <div class="contact-details">
+            <div><span class="icon">&#9993;</span> muhammad.inshal@example.com</div>
+            <div><span class="icon">&#128222;</span> +92 300 1234567</div>
+            <div><span class="icon">&#128205;</span> Karachi, Pakistan</div>
+          </div>
+        </div>
+        <div class="contact-social-block">
+          <h2>Follow Me</h2>
+          <div class="social-links">
+            <a href="#" class="social-btn"><span class="icon">&#128187;</span> GitHub</a>
+            <a href="#" class="social-btn"><span class="icon">&#128100;</span> LinkedIn</a>
+          </div>
+          <a href="resume.pdf" class="btn primary" download><span class="icon">&#8681;</span> Download Resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      &copy; 2024 Muhammad Inshal. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 
