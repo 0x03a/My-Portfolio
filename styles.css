@@ -47,13 +47,19 @@ body {
   font-weight: 600;
   
 }
+.main-header {
+  
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
 
 .main-header::after {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   border: 5px solid transparent;
-  border-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   pointer-events: none;
   z-index: 11;
   animation: navBorderMove 12s linear infinite;
