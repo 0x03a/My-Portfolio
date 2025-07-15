@@ -14,7 +14,7 @@
 // }, 10000);
 
 // Animated role switching in Hero section
-const heroRoles = ["Web Developer", "Problem Solver"];
+const heroRoles = ["Web Developer", "Problem Solver","Backend-Engineer"];
 let heroRoleIndex = 0;
 const heroAnimatedRole = document.getElementById("hero-animated-role");
 setInterval(() => {
