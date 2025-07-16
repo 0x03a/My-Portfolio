@@ -112,10 +112,5 @@ If you found this portfolio helpful or inspiring, consider giving it a ⭐ on [G
 
 ---
 
-## 📬 Contact
-
-* **Email:** [inshalrrr@gmail.com](mailto:inshalrrr@gmail.com)
-* **GitHub:** [0x03a](https://github.com/0x03a)
-* **LinkedIn:** [m-inshal-ba930a2a3](https://www.linkedin.com/in/m-inshal-ba930a2a3/)
 
 
