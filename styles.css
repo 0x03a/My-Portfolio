@@ -931,11 +931,6 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
   }
 }
 
-/* Adjust .skill-card for horizontal layout
-.skill-card {
-  min-width: 200px; */
-  /* ...other styles...
-}  */
 
 @media (min-width: 1200px) {
   .hero-container {
@@ -971,3 +966,34 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
   transition: box-shadow 0.3s, transform 0.3s, border 0.3s;
   cursor: pointer;
 } 
+/* 
+@media (min-width:407  ) and (max-height: 850px) {
+.main-nav ul {
+  height: 70vh;
+}
+
+
+} */
+@media (max-height: 700px) {
+  .main-nav ul {
+    height: 64vh;
+  }
+}
+
+@media (max-height: 740px) and (min-height: 701px) {
+  .main-nav ul {
+    height: 58vh;
+  }
+}
+
+/* @media (max-height: 750px) and (min-height: 741px) {
+  .main-nav ul {
+    height: 70vh;
+  }
+} */
+
+@media (max-height: 850px) and (min-height: 751px) {
+  .main-nav ul {
+    height: 60vh;
+  }
+}
