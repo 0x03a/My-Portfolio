@@ -128,7 +128,7 @@ nav a:hover {
 .hero {
   background: var(--background);
   padding: 3rem 0 2rem 0;
-  margin-top: 200px;
+  margin-top: 0; /* or a much smaller value, e.g., 60px */
   transition: ease-in-out;
   
 }
@@ -852,7 +852,7 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
     top: 0;
     left: -260px;
     width: 130px;
-    height: 50vh;
+    height: 65vh;
     background:#fff;
     border-top-right-radius:10%;
     border-bottom-right-radius:10%;
@@ -974,26 +974,3 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
 
 
 } */
-@media (max-height: 700px) {
-  .main-nav ul {
-    height: 64vh;
-  }
-}
-
-@media (max-height: 740px) and (min-height: 701px) {
-  .main-nav ul {
-    height: 58vh;
-  }
-}
-
-/* @media (max-height: 750px) and (min-height: 741px) {
-  .main-nav ul {
-    height: 70vh;
-  }
-} */
-
-@media (max-height: 850px) and (min-height: 751px) {
-  .main-nav ul {
-    height: 60vh;
-  }
-}
