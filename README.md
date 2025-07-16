@@ -98,14 +98,6 @@ Then open `index.html` directly in your browser or launch with a live server (li
 
 ---
 
-## 📝 License
-
-© 2025 Muhammad Inshal
-This project is licensed under the [MIT License](LICENSE).
-You are free to use, modify, and distribute this portfolio with proper credit.
-
----
-
 ## 🌟 Support
 
 If you found this portfolio helpful or inspiring, consider giving it a ⭐ on [GitHub](https://github.com/0x03a/myPersonalportFolio)!
