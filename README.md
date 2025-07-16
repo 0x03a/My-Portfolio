@@ -29,11 +29,9 @@ A modern, responsive personal portfolio website to showcase my skills, projects,
 
 | Tool       | Logo                                                                 |
 |------------|----------------------------------------------------------------------|
-| Figma      | <img src="icons/icons8-figma-50.png" width="40"/>                   |
 | CSS3       | <img src="https://icon2.cleanpng.com/20180510/biw/kisspng-html-css-design-and-build-web-sites-web-develop-5af50c33acf486.1786193415260088837084.jpg" width="40"/> |
 | JavaScript | <img src="icons/jsgif.gif" width="40"/>                              |
 | HTML5      | <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuspKjKxXgABkRelAAyT-yjDbapueYgL-ag&s" width="40"/> |
-| LeetCode   | <img src="images/leetcode.png" width="40"/>                          |
 
 
 ---
