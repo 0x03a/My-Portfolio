@@ -1,3 +1,4 @@
+
 # 🌐 Muhammad Inshal Portfolio
 
 A modern, responsive personal portfolio website to showcase my skills, projects, education, and contact information. Built with **HTML5**, **CSS3**, and **JavaScript (ES6+)**.
@@ -6,36 +7,34 @@ A modern, responsive personal portfolio website to showcase my skills, projects,
 
 ## 🚀 Live Demo
 
-> 🔗 [**View Live Portfolio**](https://your-live-site-link.com)  
+> 🔗 [**View Live Portfolio**](https://0x03a.github.io/My-Portfolio/)  
 
 
 ---
 
 ## 🌟 Features
 
-- ✅ **Responsive Design** — Works seamlessly on all screen sizes
-- 🎯 **Animated Hero Section** — Engaging introduction with dynamic role text
-- 🧠 **Skills Showcase** — Grid of tech icons with animation
-- 🛠️ **Projects Section** — Real-world projects with links to GitHub/live sites
-- 🎓 **Education & Coursework** — Clean and concise academic history
-- 📩 **Contact Section** — Email, location, and social links
-- 📄 **Downloadable Resume** — Instantly download your CV (PDF)
-- 🌙 **Clean, Lightweight, Fast** — No external frameworks or libraries
+- ✅ **Responsive Design** — Works seamlessly on all screen sizes  
+- 🎯 **Animated Hero Section** — Engaging introduction with dynamic role text  
+- 🧠 **Skills Showcase** — Grid of tech icons with animation  
+- 🛠️ **Projects Section** — Real-world projects with links to GitHub/live sites  
+- 🎓 **Education & Coursework** — Clean and concise academic history  
+- 📩 **Contact Section** — Email, location, and social links  
+- 📄 **Downloadable Resume** — Instantly download your CV (PDF)  
+- 🌙 **Clean, Lightweight, Fast** — No external frameworks or libraries  
 
 ---
 
 ## 🧰 Tech Stack & Tools
 
-<div align="left">
-  <img src="/images" alt="HTML5" width="40"/>
-  <img src="tools/css3.png" alt="CSS3" width="40"/>
-  <img src="tools/javascript.png" alt="JavaScript" width="40"/>
-  <img src="tools/github.png" alt="GitHub" width="40"/>
-  <img src="tools/figma.png" alt="Figma" width="40"/>
-  <img src="tools/leetcode.png" alt="LeetCode" width="40"/>
-</div>
+| Tool       | Logo                                                                 |
+|------------|----------------------------------------------------------------------|
+| Figma      | <img src="icons/icons8-figma-50.png" width="40"/>                   |
+| CSS3       | <img src="https://icon2.cleanpng.com/20180510/biw/kisspng-html-css-design-and-build-web-sites-web-develop-5af50c33acf486.1786193415260088837084.jpg" width="40"/> |
+| JavaScript | <img src="icons/jsgif.gif" width="40"/>                              |
+| HTML5      | <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuspKjKxXgABkRelAAyT-yjDbapueYgL-ag&s" width="40"/> |
+| LeetCode   | <img src="images/leetcode.png" width="40"/>                          |
 
-<sub>_All logos should be added to the `tools/` directory as image files._</sub>
 
 ---
 
@@ -66,3 +65,57 @@ myPersonalportFolio/
 │   └── muhmmadInshalCv.pdf
 │
 └── README.md                # This file
+````
+
+---
+
+## 📄 Usage
+
+To run locally:
+
+```bash
+git clone https://github.com/0x03a/myPersonalportFolio.git
+cd myPersonalportFolio
+```
+
+Then open `index.html` directly in your browser or launch with a live server (like VS Code Live Server extension).
+
+---
+
+## ⚠️ Important Notes and Tips
+
+> \[!NOTE]
+> This portfolio is built using pure HTML, CSS, and vanilla JavaScript without any frontend frameworks, keeping it lightweight and fast.
+
+> \[!TIP]
+> For best performance and full functionality, open the portfolio using a local server or VS Code Live Server instead of directly opening the HTML file in some browsers.
+
+> \[!WARNING]
+> Images and icons must be correctly placed in the `icons/` and `images/` folders for everything to render properly. Missing assets may break the UI.
+
+> \[!CAUTION]
+> When modifying the code, ensure JavaScript event listeners and CSS selectors remain consistent to avoid breaking animations and interactive features.
+
+---
+
+## 📝 License
+
+© 2025 Muhammad Inshal
+This project is licensed under the [MIT License](LICENSE).
+You are free to use, modify, and distribute this portfolio with proper credit.
+
+---
+
+## 🌟 Support
+
+If you found this portfolio helpful or inspiring, consider giving it a ⭐ on [GitHub](https://github.com/0x03a/myPersonalportFolio)!
+
+---
+
+## 📬 Contact
+
+* **Email:** [inshalrrr@gmail.com](mailto:inshalrrr@gmail.com)
+* **GitHub:** [0x03a](https://github.com/0x03a)
+* **LinkedIn:** [m-inshal-ba930a2a3](https://www.linkedin.com/in/m-inshal-ba930a2a3/)
+
+
