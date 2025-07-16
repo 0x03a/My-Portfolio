@@ -979,3 +979,33 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
 
 
 } */
+
+/* Animated skill icons for skills section */
+.animated-icon {
+  animation: icon-bounce 1.2s infinite alternate;
+}
+@keyframes icon-bounce {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-8px) scale(1.08); }
+}
+
+.transparent-bg {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.python-spin {
+  animation: spin-pause 2s linear infinite;
+}
+@keyframes spin-pause {
+  0% { transform: rotate(0deg); }
+  40% { transform: rotate(360deg); }
+  50% { transform: rotate(360deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.remix-animated {
+  display: inline-block;
+  animation: icon-bounce 1.2s infinite alternate;
+}
