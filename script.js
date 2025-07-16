@@ -57,4 +57,30 @@ navLinks.forEach(link => {
   link.addEventListener('click', () => {
     mainNavUl.classList.remove('open');
   });
-}); 
+});
+
+// Infinite carousel for skills section
+function setupSkillsCarousel() {
+  const grid = document.getElementById('skills-grid');
+  const wrapper = document.getElementById('skills-carousel-wrapper');
+  if (!grid || !wrapper) return;
+
+  // Duplicate the grid content for seamless looping
+  grid.innerHTML += grid.innerHTML;
+
+  let scrollAmount = 0;
+  const speed = 1.1; // px per frame
+  const gridWidth = grid.scrollWidth / 2;
+
+  function animate() {
+    scrollAmount += speed;
+    if (scrollAmount >= gridWidth) {
+      scrollAmount = 0;
+    }
+    grid.style.transform = `translateX(${-scrollAmount}px)`;
+    requestAnimationFrame(animate);
+  }
+  animate();
+}
+
+document.addEventListener('DOMContentLoaded', setupSkillsCarousel); 

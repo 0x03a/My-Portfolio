@@ -301,11 +301,13 @@ nav a:hover {
   flex-wrap: nowrap;
   gap: 1.5rem;
   justify-content: flex-start;
-  animation: scrollSkills 18s linear infinite;
+  animation: scrollSkills 14s linear infinite;
   width: max-content;
   margin-left: 0;
   margin-right: 120px;
   padding-right: 120px;
+  will-change: transform;
+  transform: translateZ(0);
 }
 .skill-card {
   background: #23272f;
@@ -335,7 +337,7 @@ nav a:hover {
 }
 
 .leetcode-link:hover {
-  color:var(--primary);
+  color:#FA9D15;
   font-weight: bold;
   box-shadow: 0 0 1px 0 rgba(30,215,96,0.5);
 }
@@ -740,6 +742,10 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
   box-shadow: 0 2px 16px rgba(30,215,96,0.10);
   margin-top: 0.5rem;
 }
+.leetcode-img:hover {
+  box-shadow: 0 4px 24px #FA9D15, 0 2px 16px rgba(30,215,96,0.10);
+  transition: box-shadow 0.3s;
+}
 @media (max-width: 900px) {
   .skills-code-container {
     flex-direction: column;
@@ -990,10 +996,9 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
   100% { transform: translateY(-8px) scale(1.08); }
 }
 
-.transparent-bg {
-  background: transparent !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
+.remix-animated {
+  display: inline-block;
+  animation: icon-bounce 1.2s infinite alternate;
 }
 
 .python-spin {
@@ -1006,7 +1011,8 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
   100% { transform: rotate(360deg); }
 }
 
-.remix-animated {
-  display: inline-block;
-  animation: icon-bounce 1.2s infinite alternate;
+.transparent-bg {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
