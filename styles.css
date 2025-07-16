@@ -126,23 +126,28 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  background: var(--background);
-  padding: 3rem 0 2rem 0;
-  margin-top: 0; /* or a much smaller value, e.g., 60px */
-  transition: ease-in-out;
-  
+  min-height: calc(100vh - 70px); /* Fill viewport minus header */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 2rem 0; /* Remove top padding for better centering */
 }
+
 .hero-container {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  height: 100%;
 }
+
 .hero-content {
   flex: 1 1 350px;
-  word-break: break-word;
-  white-space: normal;
-  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 0;
   text-align: left;
 }
 .hero-content h1, .hero-content h2, .hero-content p {
