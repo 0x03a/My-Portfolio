@@ -289,6 +289,7 @@ nav a:hover {
   padding: 3rem 0;
   overflow: hidden;
   padding-left: 40px;
+  padding-right: 60px;
 }
 .skills-section h2 {
   text-align: center;
@@ -920,11 +921,11 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
   margin: 0 auto;
 }
 
-.skills-carousel {
+.skills-grid {
   display: flex;
-  gap: 2rem;
-  animation: scrollSkills 20s linear infinite;
+  gap: 1.5rem;
   width: max-content;
+  animation: scrollSkills 20s linear infinite;
 }
 
 @keyframes scrollSkills {
