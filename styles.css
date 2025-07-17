@@ -1016,3 +1016,9 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+
+@media (max-width: 1200px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
