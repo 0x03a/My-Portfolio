@@ -113,7 +113,7 @@ main,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3rem 0 0;
+  padding: 0 3rem 0 1rem;
   max-width: 100%;
 }
 .logo {
@@ -121,16 +121,17 @@ main,
   font-weight: bold;
   color: var(--primary);
   margin-right: auto;
-  padding-left: 3.0rem;
-  margin-left: 0;
+  padding-left: 0rem;
+  margin-left: -9rem;
 }
 nav ul {
   display: flex;
-  gap: 2.5rem;
+  gap: 3.5rem;
   list-style: none;
   color:#23272f;
   margin-left: auto;
-  padding-right: 1rem;
+  margin-right: -8rem;
+  padding-right: 0;
 }
 nav a {
   color: var(--text);
@@ -752,11 +753,12 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
     padding: 0 0.75rem;
   }
   .nav-container {
-    padding: 0 0.75rem 0 0;
+    padding: 0 0.75rem;
   }
   .logo {
     font-size: 1.2rem;
     padding-left: 0.5rem;
+    margin-left: 0;
   }
   .hero-content {
     padding-left: 0.75rem;
@@ -1024,11 +1026,12 @@ nav a:hover, .icon-link:hover, .social-btn:hover {
 
 @media (max-width: 900px) {
   .nav-container {
-    padding: 0 1rem 0 0;
+    padding: 0 1rem;
   }
   .logo {
     font-size: 1.3rem;
     padding-left: 0.5rem;
+    margin-left: 0;
   }
   .main-nav ul {
     position: fixed;
