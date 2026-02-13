@@ -5,27 +5,27 @@ A modern, responsive personal portfolio website to showcase my skills, projects,
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
 > 🔗 [**View Live Portfolio**](https://0x03a.github.io/My-Portfolio/)  
 
 
 ---
 
-## 🌟 Features
+##  Features
 
-- ✅ **Responsive Design** — Works seamlessly on all screen sizes  
-- 🎯 **Animated Hero Section** — Engaging introduction with dynamic role text  
-- 🧠 **Skills Showcase** — Grid of tech icons with animation  
-- 🛠️ **Projects Section** — Real-world projects with links to GitHub/live sites  
-- 🎓 **Education & Coursework** — Clean and concise academic history  
-- 📩 **Contact Section** — Email, location, and social links  
-- 📄 **Downloadable Resume** — Instantly download your CV (PDF)  
-- 🌙 **Clean, Lightweight, Fast** — No external frameworks or libraries  
+-  **Responsive Design** — Works seamlessly on all screen sizes  
+-  **Animated Hero Section** — Engaging introduction with dynamic role text  
+-  **Skills Showcase** — Grid of tech icons with animation  
+-  **Projects Section** — Real-world projects with links to GitHub/live sites  
+-  **Education & Coursework** — Clean and concise academic history  
+-  **Contact Section** — Email, location, and social links  
+-  **Downloadable Resume** — Instantly download your CV (PDF)  
+-  **Clean, Lightweight, Fast** — No external frameworks or libraries  
 
 ---
 
-## 🧰 Tech Stack & Tools
+##  Tech Stack & Tools
 
 | Tool       | Logo                                                                 |
 |------------|----------------------------------------------------------------------|
@@ -36,7 +36,7 @@ A modern, responsive personal portfolio website to showcase my skills, projects,
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```plaintext
 myPersonalportFolio/
@@ -67,7 +67,7 @@ myPersonalportFolio/
 
 ---
 
-## 📄 Usage
+##  Usage
 
 To run locally:
 
@@ -80,7 +80,7 @@ Then open `index.html` directly in your browser or launch with a live server (li
 
 ---
 
-## ⚠️ Important Notes and Tips
+##  Important Notes and Tips
 
 > \[!NOTE]
 > This portfolio is built using pure HTML, CSS, and vanilla JavaScript without any frontend frameworks, keeping it lightweight and fast.
@@ -96,9 +96,9 @@ Then open `index.html` directly in your browser or launch with a live server (li
 
 ---
 
-## 🌟 Support
+##  Support
 
-If you found this portfolio helpful or inspiring, consider giving it a ⭐ on [GitHub](https://github.com/0x03a/myPersonalportFolio)!
+If you found this portfolio helpful or inspiring, consider giving it a  on [GitHub](https://github.com/0x03a/myPersonalportFolio)!
 
 ---
 
