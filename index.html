@@ -11,6 +11,9 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Binary Rain Canvas -->
+  <canvas id="binaryCanvas"></canvas>
+  
   <header class="main-header">
     <div class="container nav-container">
       <div class="logo">Muhammad Inshal</div>
@@ -55,7 +58,6 @@
     <!-- About Section -->
     <section id="about" class="about-section hidden-on-load">
       <div class="container about-container">
-        
         <div class="about-info">
           <h2>About Me</h2>
           <p>Motivated Computer Science student at FAST-NUCES with a solid grasp of programming and a love for building
@@ -80,7 +82,7 @@
             <h2>Skills/Tech</h2>
             <div id="skills-carousel-wrapper" class="skills-carousel-wrapper" style="overflow:hidden;width:100%;">
               <div id="skills-grid" class="skills-grid">
-                <div class="skill-card" style="margin-right:10px;"><img src="icons/jsgif.gif" alt="Js" class="skill-icon animated-icon transparent-bg" width="32" height="32"></span>JavaScript</div>
+                <div class="skill-card" style="margin-right:10px;"><img src="icons/jsgif.gif" alt="Js" class="skill-icon animated-icon transparent-bg" width="32" height="32">JavaScript</div>
                 <div class="skill-card"><span class="icon"><img src="icons/icons8-c++-50-removebg-preview.png" alt="C++" class="skill-icon animated-icon transparent-bg" width="32" height="32"></span> C++</div>
                 <div class="skill-card"><span class="icon"><img src="icons/icons8-python-48.png" alt="python" class="python-spin animated-icon transparent-bg" width="32" height="32"></span> Python</div>
                 <div class="skill-card"><span class="icon"><img src="icons/express-removebg-preview.png" alt="Express.js" class="skill-icon animated-icon transparent-bg" width="32" height="32"></span> Express.js</div>
@@ -107,17 +109,6 @@
       <div class="container">
         <h2>Projects</h2>
       <div class="projects-grid">
-          <!--   <div class="project-card">
-            <h3>E-Commerce Platform</h3>
-            <p>Full-stack e-commerce solution built with Node.js, Express, and React</p>
-            <div class="project-tags">
-              <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="icon-link" title="Source Code">&#128187; Code</a>
-              <a href="#" class="icon-link" title="Live Demo">&#128279; Live Demo</a>
-            </div>
-          </div> -->
           <div class="project-card">
             <h3>Data Breach Checker</h3>
             <p>A web application that allows users to check if their credentials have been exposed in data breaches, manage passwords securely, and learn about digital safety.</p>
@@ -126,14 +117,13 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/0x03a/Data-Breach-Checker" class="icon-link" title="Source Code">&#128187; Code</a>
-            
             </div>
           </div>
           <div class="project-card">
             <h3>Hospital Management System</h3>
             <p>This Hospital Management System leverages Oracle Database and Visual Studio to efficiently manage patient records, staff roles, appointment schedules, and revenue tracking</p>
             <div class="project-tags">
-              <span>C#</span><span> Orcale</span>
+              <span>C#</span><span>Oracle</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/0x03a/Hospital-Management-System" class="icon-link" title="Source Code">&#128187; Code</a>
@@ -162,7 +152,7 @@
           </div>
           <div class="education-courses">
             <strong>Relevant Coursework:</strong>
-            <span class="course-badge">Data Structures and Algorihtms</span>
+            <span class="course-badge">Data Structures and Algorithms</span>
             <span class="course-badge">Web Development</span>
             <span class="course-badge">Database Systems</span>
             <span class="course-badge">Operating Systems</span>
@@ -212,8 +202,8 @@
           </div>
           <a href="Cv/muhmmadInshalCv(2).pdf" class="btn primary" download><span class="icon" style="display:inline-block;vertical-align:middle;width:1.2em;height:1.2em;margin-bottom:2px;">
             <!-- Download SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="18" height="18"><path fill="#1ed760" d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7V48c0-17.7-14.3-32-32-32s-32 14.3-32 32v290.7l-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128z"/>
-          </span> Download Resume</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="18" height="18"><path fill="#1ed760" d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7V48c0-17.7-14.3-32-32-32s-32 14.3-32 32v290.7l-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128z"/></svg>
+              </span> Download Resume</a>
         </div>
       </div>
     </section>
@@ -224,5 +214,57 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    // Binary Rain Animation
+    const canvas = document.getElementById('binaryCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Set canvas size
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    // Binary rain settings
+    const fontSize = 16;
+    const columns = Math.floor(canvas.width / fontSize);
+    const drops = Array(columns).fill(1);
+
+    // Binary characters
+    const binary = '01';
+
+    // Draw function
+    function draw() {
+        // Semi-transparent black to create trail effect
+        ctx.fillStyle = 'rgba(24, 28, 20, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Set text properties
+        ctx.fillStyle = '#1ed760';
+        ctx.font = fontSize + 'px monospace';
+
+        // Loop through drops
+        for (let i = 0; i < drops.length; i++) {
+            // Random binary character
+            const text = binary.charAt(Math.floor(Math.random() * binary.length));
+            
+            // Draw the character
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+            // Reset drop to top randomly after it crosses the screen
+            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                drops[i] = 0;
+            }
+
+            // Move drop down
+            drops[i]++;
+        }
+    }
+
+    // Animate
+    setInterval(draw, 35);
+  </script>
 </body>
 </html> 

@@ -1,18 +1,3 @@
-// document.getElementById('contact-form').addEventListener('submit', function(e) {
-//   e.preventDefault();
-//   alert('Thank you for reaching out! I will get back to you soon.');
-//   this.reset();
-// });
-
-// Animated role switching in About section
-// const roles = ["Problem Solver", "Web Developer"];
-// let roleIndex = 0;
-// const animatedRole = document.getElementById("animated-role");
-// setInterval(() => {
-//   roleIndex = (roleIndex + 5) % roles.length;
-//   animatedRole.textContent = roles[roleIndex];
-// }, 10000);
-
 // Animated role switching in Hero section
 const heroRoles = ["Web Developer", "Problem Solver","Backend-Engineer"];
 let heroRoleIndex = 0;
